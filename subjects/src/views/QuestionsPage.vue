@@ -1,5 +1,7 @@
 <template>
   <div class="questions-container">
+    <NavigationMenu />
+    
     <h1>Testes Automatizados de Software: Um Guia Prático</h1>
 
     <!-- Exibe as perguntas visíveis no momento -->
@@ -38,6 +40,7 @@
 </template>
 
 <script setup>
+import NavigationMenu from '../components/NavigationMenu.vue';
 import { ref, onMounted } from "vue";
 import questionAnswers from "../json/questions.json";
 
