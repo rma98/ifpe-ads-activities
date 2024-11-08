@@ -145,7 +145,7 @@ export default {
   data() {
     return {
       currentPage: 1, // Página inicial
-      totalPages: 7,  // Total de páginas
+      totalPages: 2,  // Total de páginas
     };
   },
   methods: {
