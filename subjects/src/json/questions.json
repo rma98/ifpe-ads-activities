@@ -1,0 +1,74 @@
+[
+    {
+        "question": "O que é um teste de unidade em desenvolvimento de software?",
+        "answer": "Um teste de unidade é um teste automatizado que verifica individualmente pequenas partes do código, como métodos ou funções, para garantir que elas funcionem conforme esperado. Esses testes são focados em isolar a menor unidade testável do software."
+    },
+    {
+        "question": "Por que os testes de unidade são importantes para a qualidade do software?",
+        "answer": "Os testes de unidade ajudam a detectar e corrigir bugs logo no início do processo de desenvolvimento, antes que o código seja integrado com outras partes do sistema. Isso aumenta a confiança no código, melhora a manutenção e reduz o custo de correção de erros posteriormente."
+    },
+    {
+        "question": "O que a variável maiorDeTodos representa no código do Avaliador?",
+        "answer": "A variável maiorDeTodos armazena o maior lance encontrado em um leilão. Ela é inicializada com Double.NEGATIVE_INFINITY para garantir que qualquer valor de lance será maior e substituirá esse valor na primeira execução do loop."
+    },
+    {
+        "question": "Qual é o propósito do método avalia na classe Avaliador?",
+        "answer": "O método avalia percorre uma lista de lances de um leilão e determina qual é o maior valor entre eles, armazenando-o na variável maiorDeTodos."
+    },
+    {
+        "question": "Como o método avalia garante que a lógica de encontrar o maior lance funcione corretamente na primeira execução?",
+        "answer": "O método avalia inicializa a variável maiorDeTodos com Double.NEGATIVE_INFINITY, de forma que qualquer lance na lista, mesmo que seja o menor possível, será maior que Double.NEGATIVE_INFINITY e passará pelo if para atualizar o valor da variável."
+    },
+    {
+        "question": "O que é esperado que o código System.out.println(leiloeiro.getMaiorLance()); imprima?",
+        "answer": "O código imprime o maior lance entre os valores propostos no leilão, que, no exemplo dado, é 400.0."
+    },
+    {
+        "question": "Como o teste na classe TesteDoAvaliador garante que a funcionalidade de encontrar o maior lance foi testada?",
+        "answer": "A classe TesteDoAvaliador cria um leilão com lances específicos e, em seguida, chama o método avalia para processar os lances. Ao imprimir o resultado, podemos verificar manualmente se o maior lance foi corretamente identificado."
+    },
+    {
+        "question": "Quais melhorias poderiam ser feitas no teste TesteDoAvaliador?",
+        "answer": "O teste poderia ser melhorado com a utilização de um framework de teste de unidade, como JUnit, para automatizar a verificação dos resultados e garantir que o código passe automaticamente, sem depender da inspeção manual de saída."
+    },
+    {
+        "question": "O que é um teste de unidade e por que ele é importante?",
+        "answer": "Um teste de unidade é um tipo de teste automatizado que verifica o comportamento de unidades específicas de código (geralmente funções ou métodos). Ele é importante porque ajuda a garantir que cada parte do código funcione corretamente de forma isolada. Com testes de unidade, podemos detectar e corrigir bugs rapidamente, evitando falhas em produção e economizando tempo e recursos."
+    },
+    {
+        "question": "Qual é o problema encontrado no código do Avaliador?",
+        "answer": "O problema ocorre quando o leilão não tem lances ou quando todos os lances têm valores negativos. A variável menorDeTodos é inicializada com Double.POSITIVE_INFINITY, o que, em alguns casos, pode não ser atualizado corretamente e resultar em um valor incorreto para o menor lance."
+    },
+    {
+        "question": "Como podemos corrigir o problema de menorDeTodos no código?",
+        "answer": "A correção pode ser feita de duas maneiras principais: <ol><li>Verificando se o leilão tem lances antes de tentar atualizar os valores de maior e menor lance. Se não houver lances, não atualizamos a variável menorDeTodos.</li><li>Garantindo que, se o valor de menorDeTodos não for alterado de Double.POSITIVE_INFINITY, um valor adequado seja retornado no método getMenorLance(), como 0.0 ou outro valor padrão.</li></ol>"
+    },
+    {
+        "question": "Por que é importante testar diferentes cenários em um sistema?",
+        "answer": "É importante testar diferentes cenários para garantir que o código funcione corretamente em situações inesperadas ou extremas. No exemplo do Avaliador, os testes com valores negativos ou com ausência de lances ajudam a identificar falhas que poderiam passar despercebidas se o código fosse apenas testado com valores padrão. Testes abrangentes ajudam a melhorar a confiabilidade e robustez do software."
+    },
+    {
+        "question": "O que acontece quando o código não faz a verificação de um leilão sem lances?",
+        "answer": "Quando o código não faz a verificação de um leilão sem lances, a variável menorDeTodos pode permanecer com o valor Double.POSITIVE_INFINITY, o que faz com que o método getMenorLance() retorne esse valor incorreto. Isso pode gerar confusão ou erros, já que o sistema não trataria corretamente um cenário onde não há lances."
+    },
+    {
+        "question": "O que deve ser feito quando a variável menorDeTodos não é atualizada?",
+        "answer": "Quando a variável menorDeTodos não é atualizada, como no caso de um leilão sem lances ou com valores inesperados, é importante garantir que o método getMenorLance() retorne um valor sensato. Por exemplo, se menorDeTodos ainda estiver com Double.POSITIVE_INFINITY, podemos retornar um valor como 0.0 ou outro valor que faça sentido para o contexto do sistema, evitando a exibição de um valor incorreto."
+    },
+    {
+        "question": "Como podemos garantir que o código não terá bugs ao ser colocado em produção?",
+        "answer": "Para garantir que o código não terá bugs em produção, é essencial realizar testes de unidade que cubram diferentes cenários. Isso inclui casos com entradas válidas, entradas inesperadas e entradas extremas. Além disso, é importante revisar o código, realizar testes manuais e usar boas práticas de programação, como o tratamento de exceções e a validação de dados de entrada."
+    },
+    {
+        "question": "Quais são os benefícios dos testes de unidade?",
+        "answer": "Os principais benefícios dos testes de unidade incluem: <ul><li>Detecção precoce de bugs: Testes ajudam a identificar problemas logo no início do desenvolvimento.</li><li>Facilidade de manutenção: O código testado é mais fácil de modificar e melhorar, pois temos a certeza de que mudanças não quebrem funcionalidades existentes.</li><li>Documentação automática: Os testes atuam como uma forma de documentação do comportamento esperado do código.</li></ul>"
+    },
+    {
+        "question": "O que significa o valor Double.POSITIVE_INFINITY no Java e por que é usado neste código?",
+        "answer": "Double.POSITIVE_INFINITY é um valor especial em Java que representa o maior número possível que um tipo double pode ter, mas em um sentido de infinito positivo. Ele é usado no código como valor inicial para a variável menorDeTodos porque, ao inicializar com esse valor, qualquer lance será considerado menor que ele, garantindo que o primeiro lance seja aceito como o menor."
+    },
+    {
+        "question": "O que poderia ser feito para melhorar a cobertura de testes no código do Avaliador?",
+        "answer": "Para melhorar a cobertura de testes no código do Avaliador, podemos incluir testes para cenários como: <ul><li>Leilão sem lances.</li><li>Leilão com lances negativos.</li><li>Leilão com apenas um lance.</li><li>Leilão com múltiplos lances em diferentes intervalos. Esses testes garantirão que o sistema se comporte corretamente em diversas situações e ajudem a detectar bugs de forma precoce.</li></ul>"
+    }
+]
