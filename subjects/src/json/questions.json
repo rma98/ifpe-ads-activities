@@ -70,5 +70,30 @@
     {
         "question": "O que poderia ser feito para melhorar a cobertura de testes no código do Avaliador?",
         "answer": "Para melhorar a cobertura de testes no código do Avaliador, podemos incluir testes para cenários como: <ul><li>Leilão sem lances.</li><li>Leilão com lances negativos.</li><li>Leilão com apenas um lance.</li><li>Leilão com múltiplos lances em diferentes intervalos. Esses testes garantirão que o sistema se comporte corretamente em diversas situações e ajudem a detectar bugs de forma precoce.</li></ul>"
+    },
+    {
+        "question": "O que são testes automatizados e qual a sua principal vantagem?",
+        "answer": "Os testes automatizados são testes de software que são executados automaticamente, sem a necessidade de interação manual. A principal vantagem é garantir que o código de um software funcione corretamente sempre que houver uma alteração, sem a necessidade de realizar testes manuais repetitivos, o que economiza tempo e aumenta a confiabilidade do código."
+    }
+    ,
+    {
+        "question": "Quais são as etapas envolvidas em um teste automatizado?",
+        "answer": "Um teste automatizado envolve três etapas principais: <ol><li>Cenário: Definir o que será testado.</li> <li>Ação: Executar o código.</li> <li>Validação: Verificar se o resultado está correto.</li></ol>"
+    },
+    {
+        "question": "O que é o JUnit e qual sua função em testes automatizados?",
+        "answer": "O JUnit é uma biblioteca de testes para a linguagem Java, que facilita a criação e execução de testes automatizados. Ele fornece uma estrutura para definir testes de unidade, garantindo que pequenas partes do código funcionem corretamente isoladamente."
+    },
+    {
+        "question": "Como um teste de unidade com JUnit pode ser estruturado?",
+        "answer": "Um exemplo simples de teste de unidade utilizando JUnit pode ser um código que testa se o maior e o menor valor em um leilão são calculados corretamente. A estrutura envolve a criação de objetos e a execução de métodos de teste, seguida pela verificação se os valores esperados coincidem com os resultados."
+    },
+    {
+        "question": "Quais são as limitações de se ter apenas testes automatizados simples como o exemplo mostrado?",
+        "answer": "A principal limitação de testes simples, como o exemplo fornecido, é que eles podem ser insuficientes para testar todo o comportamento de sistemas mais complexos. À medida que o número de testes aumenta, é necessário organizar e otimizar os testes para garantir que eles sejam eficazes sem sobrecarregar o sistema."
+    },
+    {
+        "question": "Como o JUnit resolve o problema de testes repetitivos em sistemas grandes?",
+        "answer": "O JUnit permite a criação de testes reutilizáveis e estruturados. Ele organiza os testes em métodos independentes, e cada método pode ser executado automaticamente sempre que necessário. Isso evita a necessidade de realizar testes manuais repetitivos, economizando tempo e minimizando erros humanos."
     }
 ]
