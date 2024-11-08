@@ -95,5 +95,37 @@
     {
         "question": "Como o JUnit resolve o problema de testes repetitivos em sistemas grandes?",
         "answer": "O JUnit permite a criação de testes reutilizáveis e estruturados. Ele organiza os testes em métodos independentes, e cada método pode ser executado automaticamente sempre que necessário. Isso evita a necessidade de realizar testes manuais repetitivos, economizando tempo e minimizando erros humanos."
+    },
+    {
+        "question": "O que é JUnit e para que ele é usado?",
+        "answer": "JUnit é uma biblioteca de código aberto em Java usada para escrever e executar testes automatizados. Ele ajuda a validar o comportamento do código, garantindo que ele funcione conforme o esperado e facilitando a detecção de falhas durante o desenvolvimento."
+    },
+    {
+        "question": "Como configurar o JUnit em um projeto Java?",
+        "answer": "Para configurar o JUnit, é necessário adicionar a dependência ao arquivo pom.xml em projetos Maven: <pre><code>&lt;dependency&gt;</br> &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt; </br> &lt;artifactId&gt;junit-jupiter&lt;/artifactId&gt; </br> &lt;version&gt;5.9.3&lt;/version&gt; </br> &lt;scope&gt;test&lt;/scope&gt; </br>&lt;/dependency&gt;</code></pre>"
+    },
+    {
+        "question": "Qual é a estrutura básica de um projeto com JUnit?",
+        "answer": "A estrutura básica do projeto inclui a pasta <strong>src/main/java</strong> para o código principal e <strong>src/test/java</strong> para as classes de teste."
+    },
+    {
+        "question": "O que a anotação @Test faz em JUnit?",
+        "answer": "A anotação @Test indica que um método é um caso de teste. Quando o JUnit executa os testes, ele busca métodos com essa anotação para serem executados automaticamente."
+    },
+    {
+        "question": "Qual é a função da anotação @BeforeEach em JUnit?",
+        "answer": "A anotação @BeforeEach é usada para definir um método que deve ser executado antes de cada método de teste. É útil para inicializar objetos ou variáveis que serão usadas em todos os testes, garantindo um estado limpo antes de cada execução."
+    },
+    {
+        "question": "Como validar os resultados em um teste de unidade?",
+        "answer": "Usamos métodos de asserção fornecidos pelo JUnit, como assertEquals(), para comparar o resultado obtido com o resultado esperado. Exemplo: <pre><code>assertEquals(5, calculadora.somar(2, 3), 'A soma de 2 e 3 deve ser 5');</code></pre>"
+    },
+    {
+        "question": "O que acontece se um teste falhar?",
+        "answer": "Se um teste falhar, o JUnit informará quais testes não passaram e exibirá a mensagem de erro detalhada, indicando o valor esperado e o valor real que causou a falha. Isso facilita a identificação e correção do problema no código."
+    },
+    {
+        "question": "Por que testes automatizados são importantes?",
+        "answer": "Testes automatizados são importantes porque ajudam a garantir que o código continue funcionando corretamente após mudanças, economizando tempo e esforço comparado aos testes manuais. Eles aumentam a confiabilidade do software e permitem detectar regressões rapidamente."
     }
 ]
