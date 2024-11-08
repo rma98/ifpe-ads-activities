@@ -4,7 +4,7 @@ Repositório criado para armazenar atividades do curso de Análise e Desenvolvim
 
 ## Repositórios Relacionados
 
-### [java-projects-for-tsoftware](https://github.com/rma/java-projects-for-tsoftware.git)
+### [java-projects-for-tsoftware](https://github.com/rma98/java-projects-for-tsoftware.git)
 
 Este repositório contém projetos em Java focados na realização de testes com JUnit. Inclui exemplos de testes unitários e casos práticos, promovendo o aprendizado de boas práticas de testes automatizados. Ele complementa as atividades acadêmicas e pode ser útil para aplicar os conceitos aprendidos durante o curso.
 
