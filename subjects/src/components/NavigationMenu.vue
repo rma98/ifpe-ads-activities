@@ -2,9 +2,7 @@
   <nav class="navigation-menu">
     <ul>
       <li>
-        <router-link to="/">
-          <i class="fas fa-home"></i> Home
-        </router-link>
+        <router-link to="/"> <i class="fas fa-home"></i> Home </router-link>
       </li>
       <li>
         <router-link to="/question">
@@ -14,6 +12,11 @@
       <li>
         <router-link to="/unit-tests">
           <i class="fas fa-vial"></i> Testes de Unidade
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/complexity-of-algorithms">
+          <i class="fas fa-cogs"></i> Complexidade de Algoritmos   
         </router-link>
       </li>
     </ul>
