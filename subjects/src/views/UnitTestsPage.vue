@@ -1,7 +1,5 @@
 <template>
   <div class="unit-tests-page">
-    <NavigationMenu />
-
     <h1>Testes de Unidade e JUnit</h1>
     <p>
       Bem-vindo à página sobre Testes de Unidade! Vamos aprender sobre a
