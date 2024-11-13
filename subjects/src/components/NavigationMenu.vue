@@ -12,9 +12,9 @@
         </button>
         <ul v-if="showDropdown" class="dropdown-menu">
           <li>
-            <a href="/horario-5-periodo" class="dropdown-item">
+            <router-link to="/horario-5-periodo" class="dropdown-item">
               5º Período
-            </a>
+            </router-link>
           </li>
           <!-- Espaço reservado para o 6º período -->
         </ul>
@@ -59,7 +59,7 @@ li {
 .nav-link {
   color: #ffffff;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -74,7 +74,7 @@ li {
   background: none;
   border: none;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 2rem;
   cursor: pointer;
   display: flex;
   align-items: center;
