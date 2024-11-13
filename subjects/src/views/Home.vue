@@ -30,11 +30,39 @@
         </ul>
       </div>
     </div>
+
+    <div class="card">
+      <h2><i class="fas fa-microchip"></i> Sistemas Embarcados</h2>
+      <button @click="openModal('Sistemas Embarcados')">Ementa</button>
+    </div>
+
+    <!-- Modal -->
+    <Modal v-if="showModal" :title="modalTitle" :show="showModal" @close="showModal = false">
+      <component :is="modalContent"></component>
+    </Modal>
   </div>
 </template>
 
 <script setup>
 import fotoRobson from '../assets/img/photo.jpg';
+import { ref } from 'vue';
+import Modal from '../components/Modal.vue';
+import EmentaSistemasEmbarcados from '../components/EmentaSistemasEmbarcados.vue';
+
+const showModal = ref(false);
+const modalTitle = ref('');
+const modalContent = ref(null);
+
+function openModal(disciplina) {
+  modalTitle.value = disciplina;
+
+  // Verifica qual componente de ementa carregar
+  if (disciplina === 'Sistemas Embarcados') {
+    modalContent.value = EmentaSistemasEmbarcados;
+  }
+  
+  showModal.value = true;
+}
 </script>
 
 <style scoped>
@@ -96,6 +124,28 @@ h2 {
   gap: 0.5rem;
 }
 
+button {
+  background-color: #007acc;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -127,6 +177,11 @@ a:hover {
 
   .card {
     padding: 1rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
   }
 }
 </style>
