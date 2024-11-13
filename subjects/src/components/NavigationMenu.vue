@@ -2,74 +2,123 @@
   <nav class="navigation-menu">
     <ul>
       <li>
-        <router-link to="/"> <i class="fas fa-home"></i> Home </router-link>
+        <a href="/" class="nav-link">
+          <i class="fas fa-home"></i> Página Inicial
+        </a>
       </li>
-      <li>
-        <router-link to="/question">
-          <i class="fas fa-question-circle"></i> Questions
-        </router-link>
-      </li>
-      <li>
-        <router-link to="/unit-tests">
-          <i class="fas fa-vial"></i> Testes de Unidade
-        </router-link>
-      </li>
-      <li>
-        <router-link to="/complexity-of-algorithms">
-          <i class="fas fa-cogs"></i> Complexidade de Algoritmos   
-        </router-link>
+      <li class="dropdown">
+        <button @click="toggleDropdown" class="nav-link dropdown-toggle">
+          <i class="fas fa-calendar-alt"></i> Horário Individual
+        </button>
+        <ul v-if="showDropdown" class="dropdown-menu">
+          <li>
+            <a href="/horario-5-periodo" class="dropdown-item">
+              5º Período
+            </a>
+          </li>
+          <!-- Espaço reservado para o 6º período -->
+        </ul>
       </li>
     </ul>
   </nav>
 </template>
 
+<script setup>
+import { ref } from 'vue';
+
+const showDropdown = ref(false);
+
+function toggleDropdown() {
+  showDropdown.value = !showDropdown.value;
+}
+</script>
+
 <style scoped>
 .navigation-menu {
+  background-color: #007acc;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.navigation-menu ul {
-  display: flex;
-  gap: 1.5rem;
+ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem;
 }
 
-.navigation-menu li {
-  font-size: 1.1rem;
+li {
+  position: relative;
 }
 
-.navigation-menu a {
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #e6f7ff;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 0.5rem 1rem;
-  color: #007bff;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  color: #007acc;
+  padding: 0.5rem;
   text-decoration: none;
-  border: 2px solid #007bff;
-  border-radius: 20px;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s;
 }
 
-.navigation-menu a:hover {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.navigation-menu i {
-  margin-right: 0.5rem;
+.dropdown-item:hover {
+  background-color: #e6f7ff;
+  border-radius: 4px;
 }
 
 @media (max-width: 600px) {
-  .navigation-menu ul {
+  .navigation-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul {
     flex-direction: column;
     gap: 1rem;
   }
 
-  .navigation-menu a {
-    width: 100%;
-    text-align: center;
+  .nav-link,
+  .dropdown-toggle {
+    font-size: 1rem;
   }
 }
 </style>
