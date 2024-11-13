@@ -62,6 +62,15 @@
                 <i class="fas fa-microchip"></i> Hardware Livre
               </router-link>
             </li>
+            <li>
+              <router-link
+                to="/sistemas-embarcados-introduction"
+                class="link-icon"
+                target="_blank"
+              >
+                <i class="fas fa-microchip"></i> Introdução a Sistemas Embarcados
+              </router-link>
+            </li>
           </ul>
         </div>
       </div>
