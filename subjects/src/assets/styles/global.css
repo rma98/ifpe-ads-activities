@@ -16,7 +16,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background: linear-gradient(135deg, #3B82F6, #FDE68A);
+    color: #1F2937;
 }
 
 ol, ul {
