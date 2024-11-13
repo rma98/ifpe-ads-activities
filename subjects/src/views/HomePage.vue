@@ -80,6 +80,11 @@
                 <i class="fas fa-microchip"></i> Tecnologias de Sistemas Embarcados
               </router-link>
             </li>
+            <li>
+              <router-link to="/se-questions" class="link-icon" target="_blank"
+                ><i class="fas fa-question-circle"></i>Perguntas</router-link
+              >
+            </li>
           </ul>
         </div>
       </div>
