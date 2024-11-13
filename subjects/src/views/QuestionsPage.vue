@@ -1,7 +1,5 @@
 <template>
   <div class="questions-container">
-    <NavigationMenu />
-    
     <h1>Testes Automatizados de Software: Um Guia Prático</h1>
 
     <!-- Exibe as perguntas visíveis no momento -->
