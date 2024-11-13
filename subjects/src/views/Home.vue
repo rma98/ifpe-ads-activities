@@ -34,7 +34,7 @@
 </template>
 
 <script setup>
-import fotoRobson from '../assets/img/foto.jpg';
+import fotoRobson from '../assets/img/photo.jpg';
 </script>
 
 <style scoped>
