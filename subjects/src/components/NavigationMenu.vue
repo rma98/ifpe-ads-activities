@@ -2,9 +2,9 @@
   <nav class="navigation-menu">
     <ul>
       <li>
-        <a href="/" class="nav-link">
+        <router-link to="/" class="nav-link">
           <i class="fas fa-home"></i> Página Inicial
-        </a>
+        </router-link>
       </li>
       <li class="dropdown">
         <button @click="toggleDropdown" class="nav-link dropdown-toggle">
