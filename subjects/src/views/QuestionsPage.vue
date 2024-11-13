@@ -38,7 +38,6 @@
 </template>
 
 <script setup>
-import NavigationMenu from '../components/NavigationMenu.vue';
 import { ref, onMounted } from "vue";
 import questionAnswers from "../json/questions.json";
 
