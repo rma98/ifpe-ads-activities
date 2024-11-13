@@ -1,5 +1,6 @@
 <template>
   <div class="home-page">
+    <NavigationMenu />
     <h1>Bem-vindo à Página de Atividades</h1>
     <div class="profile-section">
       <img :src="fotoRobson" alt="Foto de Robson" class="profile-photo" />
@@ -44,6 +45,7 @@
 </template>
 
 <script setup>
+import NavigationMenu from '../components/NavigationMenu.vue';
 import fotoRobson from '../assets/img/photo.jpg';
 import { ref } from 'vue';
 import Modal from '../components/Modal.vue';
