@@ -89,6 +89,15 @@
                 microcontroladores
               </a>
             </li>
+            <li>
+              <a
+                href="https://www.makerhero.com/blog/diferencas-entre-microcontrolador-e-microprocessador/?authuser=2"
+                target="_blank"
+                class="link-icon"
+              >
+                <i class="fas fa-link"></i> Diferenças entre microcontrolador e microprocessador
+              </a>
+            </li>
           </ul>
         </div>
       </div>
