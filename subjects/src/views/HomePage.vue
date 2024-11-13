@@ -65,6 +65,24 @@
           </ul>
         </div>
       </div>
+
+      <div class="card">
+        <h2><i class="fas fa-book"></i> Recomendações</h2>
+        <div class="card-actions">
+          <ul>
+            <li>
+              <a
+                href="https://embarcados.com.br/sistemas-embarcados-e-microcontroladores/?authuser=2"
+                target="_blank"
+                class="link-icon"
+              >
+                <i class="fas fa-link"></i> Introdução aos sistemas embarcados e
+                microcontroladores
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <!-- Modal -->
