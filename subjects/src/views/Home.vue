@@ -1,55 +1,132 @@
 <template>
   <div class="home-page">
-    <h1>Bem-vindo à Página Inicial</h1>
-    <p>
-      Explore os diferentes conteúdos de aprendizado sobre testes de unidade,
-      perguntas de revisão e mais.
-    </p>
+    <h1>Bem-vindo à Página de Atividades</h1>
+    <div class="profile-section">
+      <img :src="fotoRobson" alt="Foto de Robson" class="profile-photo" />
+      <p class="description">
+        Olá, meu nome é Robson, sou estudante do curso de Análise e Desenvolvimento de Sistemas. Esta página é dedicada às minhas atividades acadêmicas e projetos pessoais. Seja muito bem-vindo!
+      </p>
+    </div>
 
-    <NavigationMenu />
+    <div class="topics-grid">
+      <div class="card">
+        <h2><i class="fas fa-database"></i> Estrutura de Dados</h2>
+        <ul>
+          <li>
+            <a href="#/complexity-of-algorithms" target="_blank">Complexidade de Algoritmos</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2><i class="fas fa-vial"></i> Teste de Software</h2>
+        <ul>
+          <li>
+            <a href="#/questions" target="_blank">Perguntas</a>
+          </li>
+          <li>
+            <a href="#/unit-tests" target="_blank">Testes de Unidade</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
-import NavigationMenu from '../components/NavigationMenu.vue';
+import fotoRobson from '../assets/img/foto.jpg';
 </script>
 
 <style scoped>
 .home-page {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin: 2rem auto;
   padding: 2rem;
-  text-align: center;
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
 }
 
-.home-page:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
-
-p {
-  font-size: 1.25rem;
-  color: #666;
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 2rem;
 }
 
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.6rem;
+  color: #333;
+  text-align: center;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #007acc;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 600px) {
-  h1 {
-    font-size: 2rem;
+  .description {
+    font-size: 1rem;
   }
 
-  p {
-    font-size: 1rem;
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .card {
+    padding: 1rem;
   }
 }
 </style>
