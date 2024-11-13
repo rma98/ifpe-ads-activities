@@ -59,7 +59,7 @@
                 class="link-icon"
                 target="_blank"
               >
-                <i class="fas fa-microchip"></i> Hardware Livre
+                <i class="fas fa-cogs"></i> Hardware Livre
               </router-link>
             </li>
             <li>
@@ -68,7 +68,7 @@
                 class="link-icon"
                 target="_blank"
               >
-                <i class="fas fa-microchip"></i> Introdução a Sistemas Embarcados
+                <i class="fas fa-book-open"></i> Introdução a Sistemas Embarcados
               </router-link>
             </li>
             <li>
@@ -249,7 +249,7 @@ li {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: #007acc;
   margin-top: 1rem;
   text-decoration: none;
