@@ -14,7 +14,7 @@
         <h2><i class="fas fa-database"></i> Estrutura de Dados</h2>
         <ul>
           <li>
-            <a href="#/complexity-of-algorithms" target="_blank">Complexidade de Algoritmos</a>
+            <router-link to="/complexity-of-algorithms" target="_blank">Complexidade de Algoritmos</router-link>
           </li>
         </ul>
       </div>
@@ -23,10 +23,10 @@
         <h2><i class="fas fa-vial"></i> Teste de Software</h2>
         <ul>
           <li>
-            <a href="#/questions" target="_blank">Perguntas</a>
+            <router-link to="/questions" target="_blank">Perguntas</router-link>
           </li>
           <li>
-            <a href="#/unit-tests" target="_blank">Testes de Unidade</a>
+            <router-link to="/unit-tests" target="_blank">Testes de Unidade</router-link>
           </li>
         </ul>
       </div>
@@ -72,9 +72,10 @@ function openModal(disciplina) {
   max-width: 1000px;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #f9f9f9;
+  background: #F3F4F6;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #1F2937;
 }
 
 .profile-section {
@@ -94,7 +95,7 @@ function openModal(disciplina) {
 
 .description {
   font-size: 1.6rem;
-  color: #333;
+  color: #1F2937;
   text-align: center;
 }
 
@@ -120,14 +121,14 @@ function openModal(disciplina) {
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #007acc;
+  color: #3B82F6;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
 button {
-  background-color: #007acc;
+  background-color: #10B981;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -140,7 +141,7 @@ button {
 }
 
 button:hover {
-  background-color: #005fa3;
+  background-color: #059669;
   transform: translateY(-2px);
 }
 
@@ -159,7 +160,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #007acc;
+  color: #3B82F6;
   font-weight: 500;
   font-size: 1.6rem;
 }
