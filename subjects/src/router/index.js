@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import HomePage from '../views/HomePage.vue';
 import QuestionsPage from '../views/QuestionsPage.vue';
+import SEQuestionsPage from '../views/SEQuestionsPage.vue';
 import UnitTestsPage from '../views/UnitTestsPage.vue';
 import ComplexityOfAlgorithmsPage from '../views/ComplexityOfAlgorithmsPage.vue';
 import OpenHardwarePage from '../views/OpenHardwarePage.vue';
@@ -12,6 +13,7 @@ import Horario6Page from '../views/Horario6Page.vue';
 const routes = [
     { path: '/', name: 'Home', component: HomePage },
     { path: '/questions', name: 'Questions', component: QuestionsPage },
+    { path: '/se-questions', name: 'SEQuestions', component: SEQuestionsPage },
     { path: '/unit-tests', name: 'UnitTests', component: UnitTestsPage },
     { path: '/complexity-of-algorithms', name: 'ComplexityOfAlgorithms', component: ComplexityOfAlgorithmsPage },
     { path: '/open-hardware', name: 'OpenHardware', component: OpenHardwarePage },
