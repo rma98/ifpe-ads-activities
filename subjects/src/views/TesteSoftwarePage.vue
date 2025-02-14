@@ -103,6 +103,11 @@
                     <li><strong>Lombok:</strong> A dependência <strong>Lombok</strong> é essencial para o projeto
                         Backend. Certifique-se de que o Lombok esteja configurado corretamente em sua máquina para que o
                         projeto funcione como esperado.</li>
+                    <li><strong>Cadastro de Usuário:</strong> Ao realizar o cadastro de um novo usuário, a equipe de
+                        desenvolvimento recebe um email notificando o novo registro. O usuário cadastrado só poderá
+                        realizar o login após aprovação da equipe. Um link de aprovação será enviado por email à equipe,
+                        que deve acessar esse link para liberar o acesso do usuário. Até que a aprovação seja feita, o
+                        usuário não conseguirá fazer login, mesmo após o cadastro.</li>
                 </ul>
             </div>
 
