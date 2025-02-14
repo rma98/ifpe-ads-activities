@@ -10,6 +10,7 @@ import SistemasEmbarcadosTechPage from '../views/SistemasEmbarcadosTechPage.vue'
 import Horario5Page from '../views/Horario5Page.vue';
 import Horario6Page from '../views/Horario6Page.vue';
 import AnimationSuspensePage from '../views/AnimationSuspensePage.vue';
+import TesteSoftwarePage from '../views/TesteSoftwarePage.vue';
 
 const routes = [
     { path: '/', name: 'Home', component: HomePage },
@@ -23,6 +24,7 @@ const routes = [
     { path: '/horario-5-periodo', name: 'horario5', component: Horario5Page },
     { path: '/horario-6-periodo', name: 'horario6', component: Horario6Page },
     { path: '/animation-suspense', name: 'AnimationSuspense', component: AnimationSuspensePage },
+    { path: '/teste-software-guia', name: 'TesteSoftwareGuia', component: TesteSoftwarePage },
     { path: '/:pathMatch(.*)*', redirect: '/' }
 ];
 
