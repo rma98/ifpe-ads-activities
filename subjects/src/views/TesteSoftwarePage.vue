@@ -124,6 +124,18 @@
                         com sucesso.</li>
                 </ul>
             </div>
+
+            <div class="info-item">
+                <h3>Vídeo Cypress</h3>
+                <p>Abaixo, um vídeo demonstrando a execução de testes Cypress na prática:</p>
+                <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                    <iframe
+                        src="https://www.loom.com/embed/b716f13d9da84129a0504510e9fd1278?sid=d2926ac3-b984-4530-bedd-be26ae9ebf79"
+                        frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                    </iframe>
+                </div>
+            </div>
         </section>
     </div>
 </template>
