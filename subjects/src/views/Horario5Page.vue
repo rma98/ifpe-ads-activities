@@ -57,7 +57,7 @@ export default {
             { day: "Terça-feira", time: "07:45 às 10:19" },
           ],
           description:
-            "Projeto de Desnvolvimento de Sistemas Web II - Leonardo de Souza Lima",
+            "Projeto de Desenvolvimento de Sistemas Web II - Leonardo de Souza Lima",
         },
         {
           name: "SISEMB",
