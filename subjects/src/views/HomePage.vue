@@ -44,6 +44,11 @@
                 Unidade</router-link
               >
             </li>
+            <li>
+              <router-link to="/teste-software-guia" class="link-icon" target="_blank"
+                ><i class="fas fa-check-circle"></i>Projeto - Testes</router-link
+              >
+            </li>
           </ul>
         </div>
       </div>
