@@ -1,14 +1,11 @@
 <template>
   <div class="schedule-container">
+    <NavigationMenu />
     <h1 class="schedule-header">Horário Individual - 6º Período</h1>
 
     <!-- Grid de cards combinados -->
     <div class="schedule-grid">
-      <div
-        v-for="(discipline, index) in disciplines"
-        :key="index"
-        class="schedule-card"
-      >
+      <div v-for="(discipline, index) in disciplines" :key="index" class="schedule-card">
         <div class="card-header">
           <h3>{{ discipline.name }}</h3>
           <i class="fa fa-book"></i> <!-- Ícone da disciplina -->
@@ -31,33 +28,61 @@
 </template>
 
 <script>
+import NavigationMenu from "../components/NavigationMenu.vue";
+
 export default {
+  components: {
+    NavigationMenu,
+  },
   data() {
     return {
       disciplines: [
         {
-          name: 'PDSWEB III',
+          name: 'PROCOMP',
           schedule: [
-            { day: 'Segunda-feira', time: '07:45 às 09:15' },
-            { day: 'Quarta-feira', time: '08:30 às 09:15' }
+            { day: 'Segunda-feira', time: '09:35 às 11:50' },
+            { day: 'Quarta-feira', time: '07:45 às 09:15' }
           ],
-          description: 'Projeto de Desenvolvimento de Sistemas Web III - Leonardo de Souza Lima'
+          description: 'Projeto em Computação - Tiago Pessoa Ferreira de Lima'
         },
         {
-          name: 'ESTINF',
+          name: 'PDISMOV',
           schedule: [
-            { day: 'Terça-feira', time: '08:30 às 09:15' },
-            { day: 'Quinta-feira', time: '08:30 às 09:15' }
+            { day: 'Terça-feira', time: '09:35 às 11:50' },
+            { day: 'Quarta-feira', time: '09:35 às 10:19' }
           ],
-          description: 'Estruturas para Internet - Fábio Costa'
+          description: 'Programação para Dispositivos Móveis - Helio Fernando Bentzen Pessoa Filho'
         },
         {
-          name: 'ELTCC 2',
+          name: 'OETCC 2',
           schedule: [
-            { day: 'Segunda-feira', time: '08:30 às 09:15' },
+            { day: 'Sexta-feira', time: '10:20 às 11:50' }
+          ],
+          description: 'Orientações para Elaboração do TCC 2 - DAVID EDSON RIBEIRO'
+        },
+        {
+          name: 'SEGINFOR',
+          schedule: [
+            { day: 'Quinta-feira', time: '09:35 às 11:50' },
             { day: 'Sexta-feira', time: '09:35 às 10:19' }
           ],
-          description: 'Orientações para Elaboração do TCC 2 - Delano Hélio Oliveira'
+          description: 'Segurança da Informação - Thiago Valentim Bezerra'
+        },
+        {
+          name: 'TOPADAD',
+          schedule: [
+            { day: 'Segunda-feira', time: '07:45 às 09:15' },
+            { day: 'Terça-feira', time: '07:45 às 09:15' }
+          ],
+          description: 'Tópicos Avançados em Bancos de Dados - Leonardo de Souza Lima'
+        },
+        {
+          name: 'TAENGSOFT',
+          schedule: [
+            { day: 'Quarta-feira', time: '10:20 às 11:50' },
+            { day: 'Quinta-feira', time: '07:45 às 09:15' }
+          ],
+          description: 'Tópicos Avançados em Engenharia de Software - Helio Fernando Bentzen Pessoa Filho'
         }
       ]
     };
@@ -65,5 +90,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
