@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <NavigationMenu />
         <h1>Guia Rápido de Comandos Git</h1>
         <div v-for="(section, index) in gitCommands" :key="index" class="card">
             <h2><font-awesome-icon :icon="['fas', section.icon]" /> {{ section.title }}</h2>
@@ -13,6 +14,7 @@
 </template>
 
 <script>
+import NavigationMenu from "../components/NavigationMenu.vue";
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFolderPlus, faCodeBranch, faSyncAlt, faTrash } from '@fortawesome/free-solid-svg-icons';
@@ -22,6 +24,7 @@ library.add(faFolderPlus, faCodeBranch, faSyncAlt, faTrash);
 export default {
     components: {
         FontAwesomeIcon,
+        NavigationMenu,
     },
     data() {
         return {
