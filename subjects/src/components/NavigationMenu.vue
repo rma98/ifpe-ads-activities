@@ -16,7 +16,11 @@
               5º Período
             </router-link>
           </li>
-          <!-- Espaço reservado para o 6º período -->
+          <li>
+            <router-link to="/horario-6-periodo" class="dropdown-item">
+              6º Período
+            </router-link>
+          </li>
         </ul>
       </li>
     </ul>
