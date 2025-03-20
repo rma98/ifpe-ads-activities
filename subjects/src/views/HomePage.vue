@@ -17,13 +17,9 @@
         <div class="card-actions">
           <ul>
             <li>
-              <router-link
-                to="/complexity-of-algorithms"
-                class="link-icon"
-                target="_blank"
-                ><i class="fas fa-chart-line"></i>Complexidade de
-                Algoritmos</router-link
-              >
+              <router-link to="/complexity-of-algorithms" class="link-icon" target="_blank"><i
+                  class="fas fa-chart-line"></i>Complexidade de
+                Algoritmos</router-link>
             </li>
           </ul>
         </div>
@@ -34,20 +30,17 @@
         <div class="card-actions">
           <ul>
             <li>
-              <router-link to="/questions" class="link-icon" target="_blank"
-                ><i class="fas fa-question-circle"></i>Perguntas</router-link
-              >
+              <router-link to="/questions" class="link-icon" target="_blank"><i
+                  class="fas fa-question-circle"></i>Perguntas</router-link>
             </li>
             <li>
-              <router-link to="/unit-tests" class="link-icon" target="_blank"
-                ><i class="fas fa-check-circle"></i>Testes de
-                Unidade</router-link
-              >
+              <router-link to="/unit-tests" class="link-icon" target="_blank"><i class="fas fa-check-circle"></i>Testes
+                de
+                Unidade</router-link>
             </li>
             <li>
-              <router-link to="/teste-software-guia" class="link-icon" target="_blank"
-                ><i class="fas fa-check-circle"></i>Projeto - Testes</router-link
-              >
+              <router-link to="/teste-software-guia" class="link-icon" target="_blank"><i
+                  class="fas fa-check-circle"></i>Projeto - Testes</router-link>
             </li>
           </ul>
         </div>
@@ -59,36 +52,23 @@
           <button @click="openModal('Sistemas Embarcados')">Ementa</button>
           <ul>
             <li>
-              <router-link
-                to="/open-hardware"
-                class="link-icon"
-                target="_blank"
-              >
+              <router-link to="/open-hardware" class="link-icon" target="_blank">
                 <i class="fas fa-cogs"></i> Hardware Livre
               </router-link>
             </li>
             <li>
-              <router-link
-                to="/sistemas-embarcados-introduction"
-                class="link-icon"
-                target="_blank"
-              >
+              <router-link to="/sistemas-embarcados-introduction" class="link-icon" target="_blank">
                 <i class="fas fa-book-open"></i> Introdução a Sistemas Embarcados
               </router-link>
             </li>
             <li>
-              <router-link
-                to="/sistemas-embarcados-tech"
-                class="link-icon"
-                target="_blank"
-              >
+              <router-link to="/sistemas-embarcados-tech" class="link-icon" target="_blank">
                 <i class="fas fa-microchip"></i> Tecnologias de Sistemas Embarcados
               </router-link>
             </li>
             <li>
-              <router-link to="/se-questions" class="link-icon" target="_blank"
-                ><i class="fas fa-question-circle"></i>Perguntas</router-link
-              >
+              <router-link to="/se-questions" class="link-icon" target="_blank"><i
+                  class="fas fa-question-circle"></i>Perguntas</router-link>
             </li>
           </ul>
         </div>
@@ -99,23 +79,22 @@
         <div class="card-actions">
           <ul>
             <li>
-              <a
-                href="https://embarcados.com.br/sistemas-embarcados-e-microcontroladores/?authuser=2"
-                target="_blank"
-                class="link-icon"
-              >
+              <a href="https://embarcados.com.br/sistemas-embarcados-e-microcontroladores/?authuser=2" target="_blank"
+                class="link-icon">
                 <i class="fas fa-link"></i> Introdução aos sistemas embarcados e
                 microcontroladores
               </a>
             </li>
             <li>
-              <a
-                href="https://www.makerhero.com/blog/diferencas-entre-microcontrolador-e-microprocessador/?authuser=2"
-                target="_blank"
-                class="link-icon"
-              >
+              <a href="https://www.makerhero.com/blog/diferencas-entre-microcontrolador-e-microprocessador/?authuser=2"
+                target="_blank" class="link-icon">
                 <i class="fas fa-link"></i> Diferenças entre microcontrolador e microprocessador
               </a>
+            </li>
+            <li>
+              <router-link to="/comandos-git-guia" class="link-icon">
+                <i class="fas fa-code-branch"></i> Guia Rápido de Comandos Git
+              </router-link>
             </li>
           </ul>
         </div>
@@ -123,12 +102,7 @@
     </div>
 
     <!-- Modal -->
-    <Modal
-      v-if="showModal"
-      :title="modalTitle"
-      :show="showModal"
-      @close="showModal = false"
-    >
+    <Modal v-if="showModal" :title="modalTitle" :show="showModal" @close="showModal = false">
       <component :is="modalContent"></component>
     </Modal>
   </div>
