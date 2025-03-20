@@ -2,7 +2,7 @@
     <div class="container">
         <h1>Guia Rápido de Comandos Git</h1>
         <div v-for="(section, index) in gitCommands" :key="index" class="card">
-            <h2><font-awesome-icon :icon="section.icon" /> {{ section.title }}</h2>
+            <h2><font-awesome-icon :icon="['fas', section.icon]" /> {{ section.title }}</h2>
             <ul>
                 <li v-for="(cmd, i) in section.commands" :key="i">
                     <code>{{ cmd }}</code>
@@ -13,7 +13,16 @@
 </template>
 
 <script>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faFolderPlus, faCodeBranch, faSyncAlt, faTrash } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faFolderPlus, faCodeBranch, faSyncAlt, faTrash);
+
 export default {
+    components: {
+        FontAwesomeIcon,
+    },
     data() {
         return {
             gitCommands: [
@@ -24,6 +33,29 @@ export default {
                         'git submodule add <URL_DO_REPOSITORIO>',
                         'git commit -m "Adicionado submódulo"',
                         'git push origin main'
+                    ]
+                },
+                {
+                    title: 'Atualizar um Submódulo',
+                    icon: 'fa-sync-alt',
+                    commands: [
+                        'cd backend - Entre no diretório do submódulo',
+                        'git pull origin main',
+                        'cd ..',
+                        'git add backend',
+                        `git commit -m "Atualizado submódulo backend"`,
+                        'git push origin main'
+                    ]
+                },
+                {
+                    title: 'Remover um Submódulo',
+                    icon: 'fa-trash',
+                    commands: [
+                        'git config -f .gitmodules --remove-section submodule.backend',
+                        'git rm --cached backend',
+                        'rm -rf backend',
+                        'git commit -m "Removido submódulo backend"',
+                        `git push origin main`
                     ]
                 },
                 {
