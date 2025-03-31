@@ -27,26 +27,26 @@
 
         <h2>🔍 Estrutura de um Bloco PL/SQL</h2>
         <pre>
-  DECLARE
-      v_texto VARCHAR2(100);
-  BEGIN
-      v_texto := 'Olá, mundo!';
-      DBMS_OUTPUT.PUT_LINE(v_texto);
-  END;
+DECLARE
+    v_texto VARCHAR2(100);
+BEGIN
+    v_texto := 'Olá, mundo!';
+    DBMS_OUTPUT.PUT_LINE(v_texto);
+END;
       </pre>
         <pre>
-  DECLARE
+DECLARE
     -- Declaração de variáveis ou objetos
-  BEGIN
+BEGIN
     -- Comandos executáveis
-  EXCEPTION
+EXCEPTION
     -- Tratamento de erros
-  END;
+END;
       </pre>
 
         <h2>📝 Exemplo de código em PL/SQL</h2>
         <pre>
-        DECLARE 
+DECLARE 
     v_nome_cliente VARCHAR2(100);
 BEGIN
     SELECT nome INTO v_nome_cliente 
@@ -59,12 +59,12 @@ END;
 
         <h2>🎯 Exemplo Prático 1: Exibir uma mensagem</h2>
         <pre>
-  DECLARE
-      v_nome VARCHAR2(50);
-  BEGIN
-      v_nome := 'Robson';
-      DBMS_OUTPUT.PUT_LINE('Olá, ' || v_nome || '!');
-  END;
+DECLARE
+    v_nome VARCHAR2(50);
+BEGIN
+    v_nome := 'Robson';
+    DBMS_OUTPUT.PUT_LINE('Olá, ' || v_nome || '!');
+END;
       </pre>
 
         <h2>🔍 Saída esperada</h2>
