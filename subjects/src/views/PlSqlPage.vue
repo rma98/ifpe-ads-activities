@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <NavigationMenu />
         <h1>O que é PL/SQL?</h1>
         <p>
             PL/SQL (Procedural Language for SQL) é uma extensão procedural da linguagem SQL,
@@ -67,6 +68,7 @@ END;
 </template>
 
 <script setup>
+import NavigationMenu from "../components/NavigationMenu.vue";
 </script>
 
 <style scoped>
