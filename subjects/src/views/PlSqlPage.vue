@@ -13,7 +13,7 @@
             armazenados), triggers (gatilhos) e funções dentro do banco de dados, tornando tudo mais eficiente.
         </p>
 
-        <h2>O que dá para fazer com PL/SQL?</h2>
+        <h2>🛠️ O que dá para fazer com PL/SQL?</h2>
         <ul>
             <li>Blocos anônimos (código que roda uma única vez, sem salvar no banco)</li>
             <li>Procedures (funções armazenadas que podem ser reutilizadas)</li>
@@ -25,7 +25,7 @@
             <li>Implementar lógica de negócios dentro do banco de dados.</li>
         </ul>
 
-        <h2>Estrutura de um Bloco PL/SQL</h2>
+        <h2>🔍 Estrutura de um Bloco PL/SQL</h2>
         <pre>
   DECLARE
       v_texto VARCHAR2(100);
@@ -44,15 +44,7 @@
   END;
       </pre>
 
-        <h2>Exemplo Prático</h2>
-        <pre>
-  DECLARE
-      v_nome VARCHAR2(50);
-  BEGIN
-      v_nome := 'Robson';
-      DBMS_OUTPUT.PUT_LINE('Olá, ' || v_nome || '!');
-  END;
-      </pre>
+        <h2>📝 Exemplo de código em PL/SQL</h2>
         <pre>
         DECLARE 
     v_nome_cliente VARCHAR2(100);
@@ -64,6 +56,84 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Nome do cliente: ' || v_nome_cliente);
 END;
       </pre>
+
+        <h2>🎯 Exemplo Prático 1: Exibir uma mensagem</h2>
+        <pre>
+  DECLARE
+      v_nome VARCHAR2(50);
+  BEGIN
+      v_nome := 'Robson';
+      DBMS_OUTPUT.PUT_LINE('Olá, ' || v_nome || '!');
+  END;
+      </pre>
+
+        <h2>🔍 Saída esperada</h2>
+        <pre>
+Olá, Robson!
+      </pre>
+        <ul>
+            <li><mark>DBMS_OUTPUT.PUT_LINE()</mark> imprime mensagens no console.</li>
+        </ul>
+
+        <h2>🎯 Exemplo Prático 2: Usando uma variável numérica</h2>
+        <pre>
+DECLARE
+    v_numero NUMBER := 10;
+BEGIN
+    v_numero := v_numero * 2;
+    DBMS_OUTPUT.PUT_LINE('O dobro é: ' || v_numero);
+END;
+      </pre>
+
+        <h2>🔍 Saída esperada</h2>
+        <pre>
+O dobro é: 20
+        </pre>
+
+        <h2>🎯 Exemplo Prático 3: Tratamento de Erros</h2>
+        <pre>
+DECLARE
+    v_divisor NUMBER := 0;
+    v_resultado NUMBER;
+BEGIN
+    v_resultado := 10 / v_divisor; -- Tentativa de divisão por zero
+EXCEPTION
+    WHEN ZERO_DIVIDE THEN
+        DBMS_OUTPUT.PUT_LINE('Erro: Divisão por zero não é permitida!');
+END;
+        </pre>
+
+        <h2>🔍 Saída esperada</h2>
+        <pre>
+Erro: Divisão por zero não é permitida!
+        </pre>
+        <ul>
+            <li>O bloco <mark>EXCEPTION</mark> captura o erro <mark>ZERO_DIVIDE</mark> e impede que o programa falhe.
+            </li>
+        </ul>
+
+        <h2>🎯 Exemplo Prático 4: Criando um Procedimento</h2>
+        <pre>
+CREATE OR REPLACE PROCEDURE mostrar_mensagem IS
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Olá, PL/SQL!');
+END;
+        </pre>
+
+        <h2>📌 Como chamar o procedimento</h2>
+        <pre>
+BEGIN
+    mostrar_mensagem;
+END;
+        </pre>
+
+        <h2>🔍 Saída esperada</h2>
+        <pre>
+Olá, PL/SQL!
+        </pre>
+        <ul>
+            <li>Procedimentos são úteis para encapsular lógicas que podem ser reutilizadas.</li>
+        </ul>
     </div>
 </template>
 
@@ -92,6 +162,13 @@ h1 {
 h2 {
     margin-top: 20px;
     color: #34495e;
+}
+
+mark {
+    padding: .3rem;
+    border-radius: 5px;
+    background-color: #424242;
+    color: #fff;
 }
 
 p,
