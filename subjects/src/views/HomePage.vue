@@ -20,6 +20,10 @@
               <router-link to="/pl-sql" class="link-icon" target="_blank"><i
                   class="fas fa-code"></i>PL/SQL</router-link>
             </li>
+            <li>
+              <router-link to="/comandos-sql" class="link-icon" target="_blank"><i
+                  class="fas fa-database"></i>comandos SQL</router-link>
+            </li>
           </ul>
         </div>
       </div>
