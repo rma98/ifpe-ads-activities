@@ -123,7 +123,7 @@ id_pessoa | Cidade
 
         <h2>7️⃣ Pessoas e seus endereços, mas mostrando ‘Sem Endereço’ onde for NULL</h2>
         <pre>
-SELECT P.Nome, COALESCE(E.Rua, 'Sem Endereço') AS Endereco
+SELECT P.Nome, COALESCE(E.Cidade, 'Sem Endereço') AS Endereco
 FROM Pessoa P 
 LEFT JOIN Endereco E ON P.id_endereco = E.id_endereco;
         </pre>
@@ -140,10 +140,10 @@ Paulo   | Sem Endereço
 
         <h2>8️⃣ Contando quantas pessoas têm cada endereço</h2>
         <pre>
-SELECT E.Rua, COUNT(P.id_pessoa) AS TotalPessoas
+SELECT E.Cidade, COUNT(P.id_pessoa) AS TotalPessoas
 FROM Pessoa P 
 RIGHT JOIN Endereco E ON P.id_endereco = E.id_endereco
-GROUP BY E.Rua;
+GROUP BY E.Cidade;
         </pre>
 
         <h2>🔍 Resultado esperado</h2>
