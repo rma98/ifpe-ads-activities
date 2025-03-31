@@ -92,9 +92,9 @@
               </a>
             </li>
             <li>
-              <router-link to="/comandos-git-guia" class="link-icon">
-                <i class="fas fa-code-branch"></i> Guia Rápido de Comandos Git
-              </router-link>
+              <a href="https://rma98.github.io/devguides/" class="link-icon" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-laptop-code"></i> Guias para desenvolvedores
+              </a>
             </li>
           </ul>
         </div>
