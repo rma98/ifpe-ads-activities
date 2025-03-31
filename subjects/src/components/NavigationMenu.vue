@@ -23,6 +23,11 @@
           </li>
         </ul>
       </li>
+      <li>
+        <a href="https://rma98.github.io/robson-dev-portfolio/#/" class="nav-link" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-briefcase"></i> Meu Portólio
+        </a>
+      </li>
     </ul>
   </nav>
 </template>
