@@ -13,6 +13,18 @@
 
     <div class="topics-grid">
       <div class="card">
+        <h2><i class="fas fa-server"></i> Tópicos Avançados em Bancos de Dados</h2>
+        <div class="card-actions">
+          <ul>
+            <li>
+              <router-link to="/pl-sql" class="link-icon" target="_blank"><i
+                  class="fas fa-code"></i>PL/SQL</router-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
         <h2><i class="fas fa-database"></i> Estrutura de Dados</h2>
         <div class="card-actions">
           <ul>
