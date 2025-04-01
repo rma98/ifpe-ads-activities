@@ -29,12 +29,12 @@
       </div>
 
       <div class="card">
-        <h2><i class="fas fa-server"></i> Tópicos Avançados em Engenharia de Software</h2>
+        <h2><i class="fas fa-project-diagram"></i> Tópicos Avançados em Engenharia de Software</h2>
         <div class="card-actions">
           <ul>
             <li>
               <router-link to="/tpaes-sql" class="link-icon" target="_blank"><i
-                  class="fas fa-code"></i>Conceitos</router-link>
+                  class="fas fa-lightbulb"></i>Conceitos</router-link>
             </li>
           </ul>
         </div>
