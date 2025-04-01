@@ -10,11 +10,21 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-// Importando os ícones específicos
-import { faProjectDiagram, faQuestionCircle, faTasks, faClipboardList, faListUl, faUsers, faSearch } from '@fortawesome/free-solid-svg-icons';
+// Importando os ícones que serão utilizados
+import {
+    faProjectDiagram, faQuestionCircle, faTasks, faClipboardList, faListUl, faUsers, faSearch,
+    faSyncAlt, faEye, faRedo, faUserShield, faUserTie, faComments, faFileAlt,
+    faLightbulb, faFolderOpen, faDraftingCompass, faCalendarCheck, faFileContract,
+    faClipboardCheck, faBullseye, faChartLine
+} from '@fortawesome/free-solid-svg-icons';
 
 // Adicionando os ícones à biblioteca
-library.add(faProjectDiagram, faQuestionCircle, faTasks, faClipboardList, faListUl, faUsers, faSearch);
+library.add(
+    faProjectDiagram, faQuestionCircle, faTasks, faClipboardList, faListUl, faUsers, faSearch,
+    faSyncAlt, faEye, faRedo, faUserShield, faUserTie, faComments, faFileAlt,
+    faLightbulb, faFolderOpen, faDraftingCompass, faCalendarCheck, faFileContract,
+    faClipboardCheck, faBullseye, faChartLine
+);
 
 const app = createApp(App);
 app.component('font-awesome-icon', FontAwesomeIcon);
