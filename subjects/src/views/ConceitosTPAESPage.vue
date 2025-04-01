@@ -18,7 +18,8 @@
             <h2>
                 <font-awesome-icon :icon="['fas', 'tasks']" class="icon" /> Aplicação Prática do Scrum
             </h2>
-            <p>Scrum é uma estrutura ágil amplamente utilizada no desenvolvimento de software. Sua aplicação prática
+            <p style="font-size: 1.7rem; margin-bottom: 2rem;">Scrum é uma estrutura ágil amplamente utilizada no
+                desenvolvimento de software. Sua aplicação prática
                 envolve eventos importantes e papéis fundamentais dentro do time.</p>
 
             <div class="grid-layout">
@@ -58,7 +59,8 @@
             <h2>
                 <font-awesome-icon :icon="['fas', 'search']" class="icon" /> Técnicas de Elucidação de Requisitos
             </h2>
-            <p>Para coletar e entender os requisitos de um sistema, várias técnicas podem ser aplicadas, dependendo do
+            <p style="font-size: 1.7rem; margin-bottom: 2rem;">Para coletar e entender os requisitos de um sistema,
+                várias técnicas podem ser aplicadas, dependendo do
                 contexto do projeto.</p>
             <div class="grid-layout">
                 <div class="sub-card" v-for="(item, index) in tecnicasRequisitos" :key="index">
@@ -81,6 +83,18 @@ const perguntasRespostas = [
     {
         pergunta: "Quais principais técnicas de elucidações de requisitos?",
         resposta: "As principais técnicas incluem entrevistas, questionários, brainstorming, análise de documentos, prototipação e observação direta do usuário."
+    },
+    {
+        pergunta: "Descreva características importantes das metodologias ágeis e Scrum.",
+        resposta: "Metodologias ágeis priorizam entrega contínua, colaboração e adaptação. O Scrum divide o desenvolvimento em Sprints curtas, com reuniões diárias e revisão frequente dos resultados."
+    },
+    {
+        pergunta: "Explique sobre testes de aceitação e de sistemas.",
+        resposta: "Testes de aceitação garantem que o sistema atende aos requisitos do cliente, enquanto testes de sistemas verificam a integração e funcionamento de todas as partes. Ferramentas como Selenium e TestRail podem ser usadas."
+    },
+    {
+        pergunta: "Qual a diferença entre o teste caixa preta e caixa branca?",
+        resposta: "O teste caixa preta avalia a funcionalidade sem conhecer o código interno. O teste caixa branca verifica a lógica interna do código-fonte, garantindo que cada caminho de execução funcione corretamente."
     }
 ];
 
@@ -127,6 +141,7 @@ const tecnicasRequisitos = [
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    margin-bottom: 2rem;
 }
 
 .card,
@@ -146,5 +161,16 @@ const tecnicasRequisitos = [
 .icon {
     font-size: 22px;
     color: #007bff;
+}
+
+h2,
+h3 {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+
 }
 </style>
