@@ -34,23 +34,88 @@
 
         <div class="section">
             <h2>
-                <font-awesome-icon :icon="['fas', 'clipboard-list']" class="icon" /> Backlogs no Scrum e Daily Stand-ups
+                <font-awesome-icon :icon="['fas', 'clipboard-list']" class="icon" /> Backlogs no Scrum, Daily Stand-ups
+                e principais tipos de documentos
             </h2>
             <div class="grid-layout">
                 <div class="sub-card">
                     <h3><font-awesome-icon :icon="['fas', 'list-ul']" class="icon" /> Backlog do Produto</h3>
                     <p>Lista priorizada de todas as funcionalidades, melhorias e correções que devem ser desenvolvidas
                         ao longo do projeto.</p>
+                    <ul>
+                        <li>Contém requisitos de alto nível.</li>
+                        <li>Não é fixo, pode mudar conforme o feedback do cliente.</li>
+                    </ul>
+                    <p><strong>Product Owner</strong></p>
                 </div>
                 <div class="sub-card">
                     <h3><font-awesome-icon :icon="['fas', 'tasks']" class="icon" /> Backlog da Sprint</h3>
                     <p>Conjunto de itens selecionados do backlog do produto que serão trabalhados durante uma Sprint
                         específica.</p>
+                    <ul>
+                        <li>Definido no início da Sprint.</li>
+                        <li>Não pode ser alterado durante a Sprint, salvo exceções.</li>
+                    </ul>
+                    <p><strong>Time de Desenvolvimento</strong></p>
                 </div>
                 <div class="sub-card">
                     <h3><font-awesome-icon :icon="['fas', 'users']" class="icon" /> Daily Stand-ups vs Daily Scrum</h3>
                     <p>Daily Scrum e Daily Stand-ups são essencialmente o mesmo evento: reuniões diárias curtas (até 15
                         minutos) para alinhar o progresso da equipe e identificar impedimentos.</p>
+                </div>
+                <div class="sub-card">
+                    <h3><font-awesome-icon :icon="['fas', 'file-contract']" class="icon" /> Documento de Requisitos</h3>
+                    <p>Em metodologias tradicionais, é um documento fixo com todos os requisitos do sistema.</p>
+                    <p>No Scrum, os requisitos são divididos em Histórias de Usuário e armazenados no Product Backlog.
+                    </p>
+                    <ul>
+                        <li>No Scrum, o foco está em Histórias de Usuário, não em um documento rígido.</li>
+                        <li>Pode conter regras de negócio, critérios de aceitação e detalhes funcionais.</li>
+                    </ul>
+                    <p><strong>Product Owner e Time</strong></p>
+                </div>
+                <div class="sub-card">
+                    <h3><font-awesome-icon :icon="['fas', 'clipboard-check']" class="icon" /> Definição de Pronto (Definition of
+                        Done - DoD)</h3>
+                    <p>Lista de critérios que definem quando uma tarefa está realmente concluída.</p>
+                    <p>Criado e seguido por toda a equipe Scrum.</p>
+                    <ul>
+                        <li>Evita a entrega de código incompleto.</li>
+                        <li>Garante qualidade e consistência nas entregas.</li>
+                    </ul>
+                    <p><strong>Toda a equipe</strong></p>
+                </div>
+                <div class="sub-card">
+                    <h3><font-awesome-icon :icon="['fas', 'bullseye']" class="icon" /> Documento de Visão do Produto</h3>
+                    <p>Documento que descreve a visão geral do produto, incluindo propósito, público-alvo e objetivos.
+                    </p>
+                    <p>Normalmente elaborado pelo Product Owner e partes interessadas.</p>
+                    <ul>
+                        <li>Ajuda a equipe a entender onde o produto quer chegar.</li>
+                        <li>Mantém o time alinhado com os objetivos do negócio.</li>
+                    </ul>
+                    <p><strong>Product Owner e Stakeholders</strong></p>
+                </div>
+                <div class="sub-card">
+                    <h3><font-awesome-icon :icon="['fas', 'chart-line']" class="icon" /> Gráfico de Burndown</h3>
+                    <p>Um gráfico que mostra quanto trabalho falta para completar a Sprint ou o projeto.</p>
+                    <p>Atualizado diariamente pelo Scrum Master ou pelo time.</p>
+                    <ul>
+                        <li>Ajuda a visualizar o progresso da Sprint.</li>
+                        <li>Indica se a equipe está adiantada ou atrasada.</li>
+                    </ul>
+                    <p><strong>Scrum Master ou Time</strong></p>
+                </div>
+                <div class="sub-card">
+                    <h3><font-awesome-icon :icon="['fas', 'clipboard-list']" class="icon" /> Relatório de Retrospectiva</h3>
+                    <p>Documento criado ao final de cada Sprint, contendo o que funcionou bem, o que precisa melhorar e
+                        planos de ação.</p>
+                    <p>Baseado na reunião de Sprint Retrospective.</p>
+                    <ul>
+                        <li>Melhoria contínua do time.</li>
+                        <li>Ajuda a evitar os mesmos erros em futuras Sprints.</li>
+                    </ul>
+                    <p><strong>Toda a equipe</strong></p>
                 </div>
             </div>
         </div>
@@ -169,7 +234,8 @@ h3 {
     padding: 1rem;
 }
 
-p {
+p,
+li {
     font-size: 1.5rem;
 
 }
