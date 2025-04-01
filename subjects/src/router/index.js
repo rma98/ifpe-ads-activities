@@ -12,6 +12,7 @@ import Horario6Page from '../views/Horario6Page.vue';
 import TesteSoftwarePage from '../views/TesteSoftwarePage.vue';
 import PlSqlPage from '../views/PlSqlPage.vue';
 import comandosSQLPage from '../views/comandosSQLPage.vue';
+import ConceitosTPAESPage from '../views/ConceitosTPAESPage.vue';
 
 const routes = [
     { path: '/', name: 'Home', component: HomePage },
@@ -27,6 +28,7 @@ const routes = [
     { path: '/teste-software-guia', name: 'TesteSoftwareGuia', component: TesteSoftwarePage },
     { path: '/pl-sql', name: 'PlSql', component: PlSqlPage },
     { path: '/comandos-sql', name: 'comandosSQL', component: comandosSQLPage },
+    { path: '/tpaes-sql', name: 'ConceitosTPAES', component: ConceitosTPAESPage },
     { path: '/:pathMatch(.*)*', redirect: '/' }
 ];
 
