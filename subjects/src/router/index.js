@@ -13,6 +13,7 @@ import TesteSoftwarePage from '../views/TesteSoftwarePage.vue';
 import PlSqlPage from '../views/PlSqlPage.vue';
 import comandosSQLPage from '../views/comandosSQLPage.vue';
 import ConceitosTPAESPage from '../views/ConceitosTPAESPage.vue';
+import SemanticsPage from '../views/SemanticsPage.vue';
 
 const routes = [
     { path: '/', name: 'Home', component: HomePage },
@@ -29,6 +30,7 @@ const routes = [
     { path: '/pl-sql', name: 'PlSql', component: PlSqlPage },
     { path: '/comandos-sql', name: 'comandosSQL', component: comandosSQLPage },
     { path: '/tpaes-sql', name: 'ConceitosTPAES', component: ConceitosTPAESPage },
+    { path: '/semantics-htm5', name: 'SemanticsHTML5', component: SemanticsPage },
     { path: '/:pathMatch(.*)*', redirect: '/' }
 ];
 
