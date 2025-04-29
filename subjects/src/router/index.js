@@ -14,9 +14,14 @@ import PlSqlPage from '../views/PlSqlPage.vue';
 import comandosSQLPage from '../views/comandosSQLPage.vue';
 import ConceitosTPAESPage from '../views/ConceitosTPAESPage.vue';
 import SemanticsPage from '../views/SemanticsPage.vue';
+import HomePageTest from '../views/HomePageTest.vue';
+import AboutPage from '../views/AboutPage.vue';
+
 
 const routes = [
     { path: '/', name: 'Home', component: HomePage },
+    { path: '/home', name: 'HomePageTest', component: HomePageTest },
+    { path: '/about', name: 'About', component: AboutPage },
     { path: '/questions', name: 'Questions', component: QuestionsPage },
     { path: '/se-questions', name: 'SEQuestions', component: SEQuestionsPage },
     { path: '/unit-tests', name: 'UnitTests', component: UnitTestsPage },
